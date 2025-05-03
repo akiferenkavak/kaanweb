@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Yılan Oyunu - Benim Sitem{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/snake.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="game-container">
+    <h1>Yılan Oyunu</h1>
+    
+    <div class="game-info">
+        <div class="score-container">
+            <span>Skor: </span>
+            <span id="score">0</span>
+        </div>
+        <div class="high-score-container">
+            <span>En Yüksek Skor: </span>
+            <span id="highScore">0</span>
+        </div>
+    </div>
+    
+    <canvas id="snakeCanvas" width="400" height="400"></canvas>
+    
+    <div class="controls">
+        <button id="startBtn">Başlat</button>
+        <button id="resetBtn">Yeniden Başlat</button>
+    </div>
+    
+    <div class="instructions">
+        <h2>Nasıl Oynanır?</h2>
+        <p>Yılanı yönlendirmek için klavyenizdeki aşağıdaki tuşları kullanın:</p>
+        <ul>
+            <li>Yukarı gitmek için: <kbd>↑</kbd> veya <kbd>W</kbd></li>
+            <li>Aşağı gitmek için: <kbd>↓</kbd> veya <kbd>S</kbd></li>
+            <li> biliyosunzu işte kalanını da</li>
+        </ul>
+        <p>Duvarlara veya kendi gövdenize çarpmamaya dikkat edin, bizim yevmiyeden kesiyolar</p>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/snake.js') }}"></script>
+{% endblock %}

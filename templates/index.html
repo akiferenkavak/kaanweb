@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Ana Sayfa - Benim Sitem{% endblock %}
+
+{% block content %}
+<section class="welcome">
+    <h1>Merhaba Abi</h1>
+    <p>soldan ilerleyelim:</p>
+    <div class="features">
+        <div class="feature-card">
+            <h2>Özgeçmiş</h2>
+            <p>Kaan Bolat Müzesi.</p>
+            <a href="{{ url_for('resume') }}" class="button">Özgeçmişi Gör</a>
+        </div>
+        <div class="feature-card">
+            <h2>Yılan Oyunu</h2>
+            <p>TSSS.</p>
+            <a href="{{ url_for('snake') }}" class="button">Oyunu Oyna</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

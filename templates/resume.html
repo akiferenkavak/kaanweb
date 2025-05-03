@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block title %}Özgeçmiş - Büyülü Adana Maceraları{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/resume.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="resume">
+    <div class="header">
+        <h1>Kaan Bolat</h1>
+        <h2>5. Seviye Düşün Emekçisi | Squiditch Koçu</h2>
+        <h2>Ünlü Komedyen, Ünsüz Kimyacı</h2>
+    </div>
+
+    <div class="contact-info">
+        <p><strong>Baykuş Postası:</strong> kaanbolat@hotmail.com</p>
+        <p><strong>Sihirli Ayna (Telefon):</strong> +90 555 123 4567</p>
+        <p><strong>Adres:</strong> Gizli Geçit No: 7 ¾, Hogwarths Mahallesi, Ceyhan</p>
+        <p><strong>LinkedIn:</strong> linkedin.com/in/kaanbolat</p>
+        <p><strong>GitHub:</strong> github.com/akiferenkavak</p>
+        <p><strong>Instagram:</strong> ckbolat</p>
+        <p><strong>Bromun Insta (kızlar için özel portkey):</strong> erennkunn</p>
+    </div>
+
+    <div class="section">
+        <h2>Ömür Özet</h2>
+        <p>
+            Adanalı bir doktorum(kimya 8) ), Hogwarths'ın arka bahçesinde yetiştim. grifindr mu sliterin mi derken Squiditch koçluğuna terfi ettim. 
+            Hayat bi oraya bi buraya savurdu. Şu anda yurt dışında ismini unuttuğum bi ülkede okul falan okuyom ankarada da dertli insanları çalışmaları için davet ettğimi bi kafem var
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Eğitim</h2>
+        <div class="item">
+            <div class="date">2004 - 200∞ </div>
+            <div class="content">
+                <h3>ODTÜ (Orta Doğu Tılsım Üniversitesi)</h3>
+                <p>Kimya Baronluğu ve Kara Büyü Mühendisliği<br>
+                Ek Dal: Piksel Büyüleri ve Arayüz Tılsımları</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="date">1995 - 2004</div>
+            <div class="content">
+                <h3>Hogwarths Büyücülük ve Kebabçılık Okulu</h3>
+                <p>Squiditch Takım Kaptanı, Kebap Kulübü Başkanı, Çay Büyüleri Onur Listesi</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Character Sheet</h2>
+        <div class="item">
+            <p><strong>Class:</strong> Wizard</p>
+            <p><strong>Race:</strong> Türko</p>
+            <p><strong>Age:</strong> 32</p>
+            <p><strong>Alignment:</strong> Chaotic Adanalı</p>
+            <p><strong>HP:</strong> 42 (Ama kebap yersem 50 oluyor)</p>
+            <p><strong>Special Ability:</strong> "Lahmacun Summon"</p>
+            <p><strong>Weakness:</strong> Çay soğuyunca içememek</p>
+        </div>
+    </div>
+    
+
+    <div class="section">
+        <h2>İş Deneyimi</h2>
+        <div class="item">
+            <div class="date">20?? - Günümüz</div>
+            <div class="content">
+                <h3>kendi işimiz var elhamdülillah</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Beceriler</h2>
+        <div class="skills">
+            <span class="skill-tag">Koşma</span>
+            <span class="skill-tag">Yürüme</span>
+            <span class="skill-tag">Standup</span>
+            <span class="skill-tag">Radyo</span>
+            <span class="skill-tag">Dert çözme</span>
+            <span class="skill-tag">Yemek yapma</span>
+            <span class="skill-tag">İple tırmanma</span>
+            <span class="skill-tag">Asansöre binmek</span>
+            <span class="skill-tag">Asansörden inmek</span>
+            <span class="skill-tag">ve daha niceleri...</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Dil Becerileri</h2>
+        <p><strong>Türkçe:</strong> Anadil (+1 karizma)</p>
+        <p><strong>İngilizce:</strong> C1 (Patronus seviyesinde)</p>
+        <p><strong>Almanca:</strong> D5 (Aklın şaşar)</p>
+        <p><strong>Fransızca:</strong> A1 (Je = "ben", moi = gene "ben")</p>
+    </div>
+
+</section>
+{% endblock %}
